@@ -1,0 +1,91 @@
+.key {
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 10px;
+  background-color: rgb(226, 227, 227);
+  /* height: 30vh; */
+  padding: 3%;
+  flex-wrap: wrap;
+}
+.matter {
+  width: 50%;
+}
+.benifits {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: tungstenw05-medium, Oswald, sans-serif;
+  width: 70%;
+}
+.benifits h3 {
+  font-family: myriad-pro, Arial;
+}
+.para {
+  background-color: rgb(226, 227, 227);
+  border-radius: 10px;
+  padding: 5px;
+}
+.text {
+  width: 50%;
+}
+.text h1 {
+  font-family: tungstenw05-medium, Oswald, sans-serif;
+}
+.text h3 {
+  font-weight: normal;
+}
+.register {
+  display: flex;
+  margin-top: 10px;
+}
+@media (max-width: 768px) {
+  .key {
+    flex-direction: column;
+    padding: 5%; /* Increase padding for smaller screens */
+  }
+
+  .matter {
+    width: 100%; /* Make the content take full width */
+  }
+
+  .benifits {
+    width: 100%; /* Full width for benefits section */
+    margin-top: 20px; /* Add margin for spacing */
+  }
+
+  .text {
+    width: 100%; /* Full width for text section */
+  }
+
+  .register {
+    flex-direction: column; /* Stack register items vertically */
+    margin-top: 20px;
+  }
+}
+
+/* Media query for screens smaller than 480px (mobile) */
+@media (max-width: 480px) {
+  .key {
+    padding: 10%; /* Increase padding for smaller screens */
+  }
+
+  .para {
+    padding: 10px; /* Increase padding for better readability */
+  }
+
+  .benifits h3 {
+    font-size: 1.5rem; /* Adjust font size for better readability */
+  }
+
+  .text h1 {
+    font-size: 2rem; /* Reduce font size for titles on smaller screens */
+  }
+
+  .text h3 {
+    font-size: 1.2rem; /* Reduce subtitle size */
+  }
+
+  .register {
+    margin-top: 15px; /* Add more space between register items */
+  }
+}
