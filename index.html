@@ -15,33 +15,30 @@
   <body>
     <div class="container mb-5">
       <header
-        class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom"
-      >
-        <div class="col-md-3 mb-2 mb-md-0">
-          <a
-            href="/"
-            class="d-inline-flex link-body-emphasis text-decoration-none"
-          >
-            <img
-              class="bi"
-              width="40"
-              height="32"
-              role="img"
-              aria-label="Bootstrap"
-              src="3-19.jpg"
-            />
-            <h1 class="navbar-brand" style="margin-bottom: 0">Investors</h1>
-          </a>
-        </div>
+  class="d-flex flex-wrap align-items-center justify-content-between py-3 mb-4 border-bottom"
+>
+  <div class="col-md-3 mb-2 mb-md-0 d-flex align-items-center">
+    <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+      <img class="bi" width="40" height="32" src="3-19.jpg" alt="Logo" />
+      <h1 class="navbar-brand ms-2" style="margin-bottom: 0">Investors</h1>
+    </a>
+  </div>
 
-        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-          <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
-          <li><a href="#learn" class="nav-link px-2">Learn to Invest</a></li>
-          <li><a href="#" class="nav-link px-2">Plan Investments</a></li>
-          <li><a href="#" class="nav-link px-2">Browse and Invest</a></li>
-          <li><a href="#" class="nav-link px-2">Investor Services</a></li>
-        </ul>
-      </header>
+  <div class="menu d-md-none" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 navbarMenu">
+    <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
+    <li><a href="#learn" class="nav-link px-2">Learn to Invest</a></li>
+    <li><a href="#" class="nav-link px-2">Plan Investments</a></li>
+    <li><a href="#" class="nav-link px-2">Browse and Invest</a></li>
+    <li><a href="#" class="nav-link px-2">Investor Services</a></li>
+    <a href="./login.html" class="btn btn-primary">Login</a>
+  </ul>
+</header>
       <div class="container col-xxl-8 px-4 my-3">
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
           <div class="col-10 col-sm-8 col-lg-6">
@@ -156,6 +153,83 @@
         </form>
       </div>
     </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h5>Company</h5>
+            <ul>
+              <li><a href="#">Navigate your next</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">ESG</a></li>
+              <li><a href="#">Investors</a></li>
+              <li><a href="#">Newsroom</a></li>
+              <li><a href="#">Alumni</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <h5>Subsidiaries</h5>
+            <ul>
+              <li><a href="#">EdgeVerve Systems</a></li>
+              <li><a href="#">Infosys BPM</a></li>
+              <li><a href="#">Infosys Consulting</a></li>
+              <li><a href="#">Infosys Public Services</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <h5>Programs</h5>
+            <ul>
+              <li><a href="#">Infosys Foundation</a></li>
+              <li><a href="#">Infosys Foundation USA</a></li>
+              <li><a href="#">Infosys Science Foundation</a></li>
+              <li><a href="#">Infosys Leadership Institute</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <h5>Support</h5>
+            <ul>
+              <li><a href="#">Terms of Use</a></li>
+              <li><a href="#">Privacy Statement</a></li>
+              <li><a href="#">Cookie Policy</a></li>
+              <li><a href="#">Safe Harbour Provision</a></li>
+              <li><a href="#">Site Map</a></li>
+              <li><a href="#">Modern Slavery Statement</a></li>
+              <li><a href="#">Payment Guide for Suppliers</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <h5>Connect with us</h5>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-x-twitter"><img src="./assets/icons8-twitter-50.png" alt=""></i></a>
+              <a href="#"><i class="fab fa-facebook-f"><img src="./assets/icons8-facebook-50.png" alt=""></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"><img src="./assets/icons8-linkedin-50.png" alt=""></i></a>
+              <a href="#"><i class="fab fa-youtube"><img src="./assets/icons8-youtube-50.png" alt=""></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Infosys Limited</p>
+          <div class="country-select">
+            <select>
+              <option>Select Country/region</option>
+              <option value="IN">India</option>
+              <option value="US">USA</option>
+              <option value="UK">UK</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </footer>
     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+      // Function to toggle the navbar
+function toggleMenu() {
+  const navbarMenu = document.querySelector('.navbarMenu');
+  navbarMenu.classList.toggle('active');
+}
+
+    </script>
   </body>
 </html>

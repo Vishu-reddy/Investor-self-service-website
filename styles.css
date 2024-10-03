@@ -89,3 +89,134 @@
     margin-top: 15px; /* Add more space between register items */
   }
 }
+.menu {
+  display: none;
+}
+/* Flex-wrap and positioning changes */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+/* Fixing the positioning of the logo and the hamburger menu */
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.menu {
+  display: none; /* Hidden on large screens */
+}
+
+@media (max-width: 768px) {
+  /* Adjust layout for small screens */
+  .navbarMenu {
+    display: none;
+    flex-direction: column;
+    background-color: rgb(226, 227, 227);
+    width: 100%; /* Take full width */
+  }
+
+  .menu {
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 30px;
+    margin-right: 20px; /* Ensure it's on the right side */
+  }
+
+  .menu span {
+    height: 3px;
+    background-color: black;
+  }
+
+  .navbarMenu.active {
+    display: flex;
+  }
+
+  /* Ensure logo and menu are aligned correctly */
+  .d-md-none {
+    margin-left: auto; /* Align hamburger menu to the right */
+  }
+}
+.footer {
+  background-color: #f9f9f9;
+  padding: 40px 0;
+  border-top: 1px solid #ddd;
+}
+
+.footer h5 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer ul li {
+  margin-bottom: 10px;
+}
+
+.footer ul li a {
+  text-decoration: none;
+  color: #000;
+  transition: color 0.3s;
+}
+
+.footer ul li a:hover {
+  color: #007bff;
+}
+
+.social-icons a {
+  margin-right: 15px;
+  font-size: 1.5rem;
+  color: #000;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #007bff;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+.country-select select {
+  padding: 5px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .footer .row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-bottom p {
+    margin-bottom: 10px;
+  }
+}
